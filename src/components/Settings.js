@@ -5,21 +5,23 @@ const Settings = () => {
     const [country, setCountry] = useState("in");
     const [pageSize, setPageSize] = useState(20);
     const [language, setLanguage] = useState("english");
-
+    const [apiKey, setApiKey] = useState('bc461573c4e14525933041aab7618283');
 
     useEffect(() => {
         if(localStorage==null) {
             localStorage.setItem('country',JSON.stringify(country));
             localStorage.setItem('pageSize',JSON.stringify(pageSize));
             localStorage.setItem('language',JSON.stringify(language));
+            localStorage.setItem('apiKey',JSON.stringify(apiKey));
         }
 
         else{
             setCountry(localStorage.getItem("country"));
             setPageSize(localStorage.getItem("pageSize"));
             setLanguage(localStorage.getItem("language"));
+            setLanguage(localStorage.getItem("apiKey"));
         }    
-      }, [country,language,pageSize]);
+      }, [country,language,pageSize,apiKey]);
 
 
 
@@ -37,7 +39,11 @@ const Settings = () => {
     
     const handleLanguageSettings= (e)=> {
         setLanguage(e.target.value);
-        localStorage.setItem('language',language);
+        localStorage.setItem('language',e.target.value);
+    }
+    const handleapiKeySettings= (e)=> {
+        localStorage.setItem('apiKey',e.target.value);
+        setApiKey(e.target.value);
     }
 
 
@@ -51,14 +57,14 @@ const Settings = () => {
                         <div className="row">
                             <div className="form-group col-md-6">
                                 <label htmlFor="pageSize">Page Size</label>
-                                <input className='form-control form-control-sm w-50'  type="number" value = {localStorage.getItem(pageSize)?localStorage.getItem(pageSize):pageSize} onChange = {handlePageSizeSettings} />
+                                <input className='form-control form-control-sm w-50'  type="number" value = {pageSize} onChange = {handlePageSizeSettings} />
                             </div>
 
                             
                             <div className="form-group col-md-6">
                                 <label htmlFor="pageSize">Country</label>
-                                <input className='form-control form-control-sm w-50'  type="text" value = {localStorage.getItem(country)?localStorage.getItem(country):country} onChange = {handleCountrySettings} />
-                                <small class="form-text text-muted">eg. India(in), USA(us)</small>      
+                                <input className='form-control form-control-sm w-50'  type="text" value = {country} onChange = {handleCountrySettings} />
+                                <small className="form-text text-muted">eg. India(in), USA(us)</small>      
                                 {/* <select className="form-control form-control-sm w-50" onChange={handleCountrySettings}>
                                     <option value = "in">India</option>
                                     <option value = "us">USA</option>
@@ -73,6 +79,12 @@ const Settings = () => {
                                     <option value = "hindi">Hindi</option>
                                 </select>
                             </div>
+                            <div className="form-group col-md-6 mt-2">
+                                <label htmlFor="pageSize">API Key</label>
+                                <input className='form-control form-control-sm'  type="text" value = {apiKey} onChange = {handleapiKeySettings} />
+                                {/* <small className="form-text text-muted">{apiKey}</small>       */}
+                            </div>
+
                         </div>
 
                     </div>

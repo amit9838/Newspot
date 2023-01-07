@@ -1,0 +1,58 @@
+{
+    "status": "ok",
+    "totalResults": 4,
+    "articles": [
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Jacquelyn Melinek",
+            "title": "Will Bitcoin and Ethereum prices stagnate, sink or rebound in 2023?",
+            "description": "We're taking a look at how significant crypto and global events from this year affected the two biggest cryptocurrencies: Bitcion and Ether.",
+            "url": "https://techcrunch.com/2022/12/29/will-bitcoin-and-ethereum-prices-stagnate-sink-or-rebound-in-2023/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/12/GettyImages-1344831078.jpg?resize=1200,800",
+            "publishedAt": "2022-12-29T16:44:37Z",
+            "content": "Thanks to a months-long shakeout, the crypto market experienced one of the most drastic drawdowns in its history in 2022. But questions are arising about when (if?) major cryptocurrencies will recove… [+1320 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Manish Singh",
+            "title": "India to explore prohibition of unbacked crypto in its G20 presidency",
+            "description": "India said it will prioritize the development of a framework for global regulation of unbacked crypto assets, stablecoins and decentralized finance.",
+            "url": "https://techcrunch.com/2022/12/29/india-to-explore-prohibition-of-unbacked-crypto-in-its-g20-presidency/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/02/GettyImages-494974615.jpg?resize=1200,811",
+            "publishedAt": "2022-12-29T15:16:41Z",
+            "content": "India said on Thursday that under its G20 presidency, it will prioritize the development of a framework for global regulation of unbacked crypto assets, stablecoins and decentralized finance and will… [+1009 chars]"
+        },
+        {
+            "source": {
+                "id": "polygon",
+                "name": "Polygon"
+            },
+            "author": "Charlie Hall",
+            "title": "D&D will change to defend against crypto, other forms of exploitation",
+            "description": "One D&D will launch with a new licensing agreement in 2023 designed to deal with modern issues like crypto and crowdfunding. But what does that mean for creators on Etsy, for instance, or your favorite actual play series on Twitch?",
+            "url": "https://www.polygon.com/23529385/one-dnd-scandal-ogl-srd-crypto-nft-intellectual-property",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/MqBg5LG6329_8ExLr-1NlSwX884=/0x59:3000x1630/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/24321973/rutkowski.jpg",
+            "publishedAt": "2022-12-28T20:08:58Z",
+            "content": "Wizards of the Coast will publish a new licensing agreement for the next iteration of Dungeons &amp; Dragons, called One D&amp;D, in early 2023. This new framework will only cover written materials, … [+5414 chars]"
+        },
+        {
+            "source": {
+                "id": "the-globe-and-mail",
+                "name": "The Globe And Mail"
+            },
+            "author": "Unknown",
+            "title": "Panic at the crypto",
+            "description": "Cryptocurrencies have taken another beating this week. Globe columnist Tim Kiladze makes sense of this latest crash",
+            "url": "https://www.theglobeandmail.com/podcasts/the-decibel/article-panic-at-the-crypto/",
+            "urlToImage": "https://www.theglobeandmail.com/resizer/_avQSW-gNb8XMlBIpkC-PJlBCCk=/1200x800/filters:quality(80)/cloudfront-us-east-1.images.arcpublishing.com/tgam/GHQ5WM2SKJDSDH53LMIWUHHUSA.png",
+            "publishedAt": "2022-06-16T09:00:00Z",
+            "content": "Cryptocurrencies have taken another dive this week. And this crash follows seven months of declines, even for the big names in the game. Bitcoin, for example, is down more than 60 per cent from its p… [+339 chars]"
+        }
+    ]
+}

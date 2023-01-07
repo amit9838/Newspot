@@ -1,0 +1,10 @@
+{
+    "news":{
+        "language":"en",
+        "country":"in",
+        "pageSize":20
+    },
+    "user":{
+        "name":"Amit Chaudhary"
+    }
+}

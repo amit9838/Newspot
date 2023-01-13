@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import Settings from './components/Settings';
+import About from './components/About';
 // console.log(settings.news.country);  
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
             <Route path="/science" element={<News key="science" pageSize={localStorage.getItem('pageSize') ? localStorage.getItem('pageSize') : 20} country={localStorage.getItem('country') ? localStorage.getItem('country') : 'in'} category="science" />}></Route>
             <Route path="/sports" element={<News key="sports" pageSize={localStorage.getItem('pageSize') ? localStorage.getItem('pageSize') : 20} country={localStorage.getItem('country') ? localStorage.getItem('country') : 'in'} category="sports" />}></Route>
             <Route path="/technology" element={<News key="technology" pageSize={localStorage.getItem('pageSize') ? localStorage.getItem('pageSize') : 20} country={localStorage.getItem('country') ? localStorage.getItem('country') : 'in'} category="technology" />}></Route>
+            <Route path="/about" element={<About />}></Route>
             <Route path="/settings" element={<Settings />}></Route>
           </Routes>
         </Router>

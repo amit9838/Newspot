@@ -50,8 +50,10 @@ const Settings = () => {
   return (
     <div>
          <div className="container my-3 ">
-                    <div className="container w-50 border rounded mt-3 py-2">
+                    <div className="container w-50 border rounded mt-3 py-2 ">
                     <h3 className='px-2 py-1 bg-light rounded border py-auto '>Settings</h3>
+
+                        <div className="content mx-2">
                         <h5 className=''>Amit</h5>
                         <hr className='my-0 mb-3' />
                         <div className="row">
@@ -86,6 +88,7 @@ const Settings = () => {
                             </div>
 
                         </div>
+                    </div>
 
                     </div>
                 </div>

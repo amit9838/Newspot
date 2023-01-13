@@ -15,14 +15,14 @@ class NewsItem extends Component {
         return (
             <div>
                 <div className="card" style={{width: "18rem"}}>
-                    <img src = {imageUrl} className="card-img-top rounded" alt={title?title.slice(0,10):"Image"}/>
-                        <div className="card-body">
-                            <h5 className="card-title">{title}</h5>
+                    <img src = {imageUrl} className="card-img-top rounded" alt={"No image available!"}/>
+                        <div className="card-body p-2">
+                            <h6 className="card-title">{title}</h6>
                             <span className="badge rounded-pill" style={{backgroundColor:getbgcolor()}}>{source?source:"Unknown"}</span>
                             <br />
                             <small className="text-muted bg-light rounded px-1">{new Date(publishedAt).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})}</small>
-                            <p className="card-text">{description?description.slice(0,88)+"...":"No description"}</p>
-                            <a href={url} className = "btn btn-sm btn-primary" target='_blank' rel='noreferrer' >Read More &raquo;</a>
+                            <p className="card-text text-muted">{description?description.slice(0,88)+"...":"No description"}</p>
+                            <a href={url} className = "btn btn-sm btn-link" target='_blank' rel='noreferrer' >Read More &raquo;</a>
                         </div>
                 </div>
             </div>

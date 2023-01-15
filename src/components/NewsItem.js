@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import defaultNewsImage from '../newspot.png'
+
 
 class NewsItem extends Component {
     render() {
@@ -15,7 +17,7 @@ class NewsItem extends Component {
         return (
             <div>
                 <div className="card" style={{width: "18rem"}}>
-                    <img src = {imageUrl} className="card-img-top rounded" alt={"No image available!"}/>
+                    <img src = {imageUrl?imageUrl:defaultNewsImage} className="card-img-top rounded" alt={"No image available!"}/>
                         <div className="card-body p-2">
                             <h6 className="card-title">{title}</h6>
                             <span className="badge rounded-pill" style={{backgroundColor:getbgcolor()}}>{source?source:"Unknown"}</span>

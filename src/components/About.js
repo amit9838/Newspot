@@ -15,7 +15,8 @@ export default function About() {
                     Newsspot uses a temporary api, to use you own api key visit <a href="https://newsapi.org/">https://newsapi.org/</a>.
                 </p>
 
-                <h5>How to use your api key</h5>
+                <h5>How to use personal api key</h5>
+                <hr className='mt-0 mb-1' />
                 <ol className='text-muted'>
                     <li>Visit <a href="https://newsapi.org/">https://newsapi.org/</a>.</li>
                     <li>Login/Register on newspi.org</li>
@@ -26,6 +27,7 @@ export default function About() {
                     <li>Paste your own api key in api field.</li>
                     <li>That is it.</li>
                 </ol>
+                Note: <span className='text-secondary' style={{fontStyle:"italic"}}>All settings are stored in the browser, switching browser or deleting cache will reset preferences.</span>
 
             </div>
         </div>

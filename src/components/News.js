@@ -23,10 +23,13 @@ export default class News extends Component {
     }
 
     fetchMoreData = async() => {
+        this.props.setProgress(5);
         let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.api}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
         // this.setState({ loading: true })
         let data = await fetch(url);
+        this.props.setProgress(35);
         let parsedData = await data.json();
+        this.props.setProgress(70);
         console.log(parsedData);
         this.setState({
             totalResults: parsedData.totalResults,
@@ -34,6 +37,7 @@ export default class News extends Component {
             page:this.state.page+1,
             loading: false
         });
+        this.props.setProgress(100);
       };
 
     render() {
@@ -48,8 +52,8 @@ export default class News extends Component {
                     loader={<Spinner/>}
                 >
                     <div className="d-flex flex-wrap justify-content-around">
-                        {this.state.articles.map((element) => {
-                            return <div key={element.url} className="mx-2 my-2">
+                        {this.state.articles.map((element,index) => {
+                            return <div key={index} className="mx-2 my-2">
                                 <NewsItem title={element.title} description={element.description} url={element.url} imageUrl={element.urlToImage} publishedAt={element.publishedAt} source={element.source.name} />
                             </div>
                         })}

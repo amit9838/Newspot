@@ -1,8 +1,0 @@
-{
-    "api": {
-        "url":"https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=bc461573c4e14525933041aab7618283",
-        "key":"bc461573c4e14525933041aab7618283",
-        "country":"in",
-        "category":"general"
-    }
-}
